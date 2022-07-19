@@ -1,0 +1,49 @@
+/* google font[Ibarra Real Nova] */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Ibarra+Real+Nova&family=Poppins&display=swap');
+body{
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+/* basic setup */
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: 0;
+}
+
+/* header section */
+header{
+   overflow: hidden;
+}
+h1{
+    font-size: 50px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: auto;
+    background-color: black;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 30px;
+    height: 70vh;
+}
+.text{
+    width: 30%;
+    align-self: center;
+}
+.img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.watch{
+    color: #fff;
+    background-color: #DE3163;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
