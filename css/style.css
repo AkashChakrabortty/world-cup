@@ -18,11 +18,12 @@ a{
 /* header section */
 header{
    overflow: hidden;
+   margin-bottom: 50px;
 }
 h1{
     font-size: 50px;
 }
-.container{
+.header_container{
     display: flex;
     justify-content: space-evenly;
     width: 85%;
@@ -48,6 +49,57 @@ h1{
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
+}
+/* main section */
+main{
+    margin-bottom: 50px;
+}
+.main_container{
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+.option{
+    height: 200px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 5px;
+}
+.option a{
+    color: black;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.item{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   margin-left: 10px;
+   gap: 10px;
+}
+.blog a{
+   color: black;
+   border: 1px solid ;
+   border-radius: 3px;
+   display: inline-block;
+   padding: 10px;
+}
+.blog p{
+    font-weight: 700;
+    font-size: 25px;
+}
+.comment_duration{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.duration span{
+     transform: translateY(10deg);
 }
 /* footer */
 footer{
