@@ -58,7 +58,7 @@ main{
     display: flex;
     width: 85%;
     margin: auto;
-    overflow: hidden;
+    justify-content: space-between;
 }
 .option{
     height: 280px;
@@ -77,38 +77,38 @@ main{
     padding: 20px;
     margin: 10px;
     text-align: center;
+    font-weight: 700;
 }
-.option a:nth-child(3){
+.option a:nth-child(1){
    background-color: red;
+   color: #fff;
 }
 .item{
    width: 60%;
    display: grid;
    grid-template-columns: auto auto auto;
-   margin-left: 20px;
-   gap: 20px;
+   gap: 50px;
 }
-.blog{
+.match{
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    justify-self: center;
+    overflow: hidden;
+    
 }
-.blog a{
-   color: black;
-   border: 1px solid ;
-   border-radius: 3px;
-   display: inline-block;
-   padding: 10px;
-}
-.blog p{
-    font-weight: 700;
-    font-size: 25px;
-}
-.comment_duration{
+.match_img{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    width: 50%; 
+   margin-top: 20%;
 }
-
+.vs{
+    align-self: center;
+    font-size: 20px;
+}
+.match_text {
+    text-align: center;
+    margin-top: 10%;
+}
 /* footer */
 footer{
     background-color: black;
@@ -144,8 +144,4 @@ hr{
     height: 1px;
     background-color: rgba(238, 230, 230, 0.527);
     margin-bottom: 20px;
-}
-/* responsive for mobile */
-@media only screen and (max-width: 600px) {
-    
 }
