@@ -8,6 +8,7 @@ body{
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 button{
     border: 0;
@@ -22,6 +23,7 @@ header{
 }
 h1{
     font-size: 50px;
+    font-weight: 700;
 }
 .header_container{
     display: flex;
@@ -33,6 +35,7 @@ h1{
     color: #fff;
     margin-top: 30px;
     height: 70vh;
+    overflow: hidden;
 }
 .text{
     width: 30%;
@@ -147,5 +150,58 @@ hr{
 }
 /* responsive for mobile */
 @media only screen and (max-width: 600px) {
+    /* header */
+    .header_container{
+        overflow: hidden;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
+    .text{
+        width: 100%;
+    }
+    h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .img{
+        width: 100%;
+        align-self: center;
+    }
+    /* main */
+    .main_container{
+        flex-direction: column;
+    }
+    .option{
+        width: 100%;
+        background-color: transparent;
+    }
+    .option a{
+         font-size: 25px;
+         border: 1px solid;
+    }
+    .item{
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    .blog{
+        width: 100%;
+    }
+    .blog img{
+        width: 95%;
+    }
+    .blog p{
+        font-size: 22px;
+    }
+    /* footer */
+    footer{
+        height: 70vh;
+    }
+    .footer_link a{
+        display: block;
+    }
+}
+/* responsive for tablet */
+@media only screen and (){
     
 }
