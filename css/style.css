@@ -51,7 +51,22 @@ h1{
     background-color: #DE3163;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+.watch:hover{
+   animation-name: bg;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+@keyframes bg{
+    from{   
+        background-color: #DE3163;
+    }
+    to{
+        background-color: transparent;
+        border: 1px solid #DE3163;
+        color: #DE3163;
+    }
 }
 /* main section */
 main{
@@ -159,6 +174,13 @@ hr{
     background-color: rgba(238, 230, 230, 0.527);
     margin-bottom: 20px;
 }
+.social-icon{
+    text-align: center;
+}
+.social-icon i{
+    color: #fff;
+    padding: 10px;
+}
 /* responsive for mobile */
 @media only screen and (max-width: 600px) {
     /* header */
@@ -191,6 +213,9 @@ hr{
          font-size: 25px;
          border: 1px solid;
     }
+    .option a:nth-child(3){
+        border: 0;
+    }
     .item{
         grid-template-columns: auto;
         width: 100%;
@@ -206,9 +231,12 @@ hr{
     }
     /* footer */
     footer{
-        height: 70vh;
+        height: 80vh;
     }
     .footer_link a{
+        display: block;
+    }
+    .social-icon a{
         display: block;
     }
 }
